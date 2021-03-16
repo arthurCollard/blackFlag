@@ -3,8 +3,7 @@ import mongoose from 'mongoose'
 let Skill = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name: { type: String },
-    lvl: { type: Number, default: 0 },
-    xp: { type: Number, default: 1 },
+    lvl: { type: Number, default: 1 },
 });
 
 

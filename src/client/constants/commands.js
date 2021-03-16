@@ -1,10 +1,11 @@
+import Managers from '../managers'
 
 const start = {
     help: {
         embed: {
             color: '#000000',
             title: `**Start Command**`,
-            description: '`bf start`, Command for creating an accounr.\n',
+            description: '`bf start`, Command for creating an account.\n',
             fields: [
                 {
                     name: "What Happens: ", value: "An embed comes up that shows whether your account was successfully created or not"
@@ -15,8 +16,8 @@ const start = {
             ]
         }
     },
-    aliases: "start",
-    manager: () => { }
+    aliases: ["start", 'test'],
+    manager: Managers.startManager
 }
 
 export const prefix = 'bf';

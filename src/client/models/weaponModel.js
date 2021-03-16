@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
-let Canon = new mongoose.Schema({
+let Weapon = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name: { type: String }
 },
@@ -11,6 +11,6 @@ let Canon = new mongoose.Schema({
     });
 
 export default {
-    schema: Canon,
-    model: mongoose.model('Canon', Canon)
+    schema: Weapon,
+    model: mongoose.model('Weapon', Weapon)
 };

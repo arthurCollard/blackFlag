@@ -40,7 +40,7 @@ client.on('message', async msg => {
 
     if (!msg.content.startsWith(prefix) || msg.author.bot) return
     commands.map(commandObj => {
-        commandObj.aliases.includes(command){
+        if (commandObj.aliases.includes(command)){
             commandObj.manager({ msg, client })
         }
     })
